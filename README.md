@@ -101,7 +101,7 @@ Each word contains:
   "f0_median": 132.5
 }
 ### Generated Report (click to open)
-[![Report screenshot](report_screenshot.png)](report.html)
+[![Report screenshot](report_screenshot.png.png)](report.html)
 
 *Click the image to open the full HTML report in the repository.*
 
