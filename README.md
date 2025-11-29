@@ -2,7 +2,7 @@
 
 Word-by-word pronunciation, fluency, emphasis, tension & breathiness analysis using Whisper + WhisperX + Python.
 
-This project analyzes an audio file at a per-word level.https://github.com/ashishraulin/audio-word-analysis/blob/main/README.md
+This project analyzes an audio file at a per-word level.
 It generates timestamps, duration, word emphasis, vocal tension, breathiness, fluency, pitch (F0), energy, and pronunciation scores using Deep Learning models.
 
 🔥 Key Features
