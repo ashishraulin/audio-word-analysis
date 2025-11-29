@@ -1,0 +1,104 @@
+[
+  {
+    "word": "Hello,",
+    "start": 0.0,
+    "end": 0.403,
+    "score": 0.939
+  },
+  {
+    "word": "my",
+    "start": 0.503,
+    "end": 0.624,
+    "score": 0.984
+  },
+  {
+    "word": "name",
+    "start": 0.644,
+    "end": 0.785,
+    "score": 0.923
+  },
+  {
+    "word": "is",
+    "start": 0.826,
+    "end": 0.886,
+    "score": 0.889
+  },
+  {
+    "word": "Ashish",
+    "start": 1.087,
+    "end": 1.309,
+    "score": 0.539
+  },
+  {
+    "word": "Raj.",
+    "start": 1.369,
+    "end": 1.691,
+    "score": 0.761
+  },
+  {
+    "word": "I",
+    "start": 2.235,
+    "end": 2.255,
+    "score": 0.772
+  },
+  {
+    "word": "am",
+    "start": 2.295,
+    "end": 2.356,
+    "score": 0.878
+  },
+  {
+    "word": "recording",
+    "start": 2.396,
+    "end": 2.779,
+    "score": 0.894
+  },
+  {
+    "word": "this",
+    "start": 2.819,
+    "end": 2.98,
+    "score": 0.912
+  },
+  {
+    "word": "audio",
+    "start": 3.161,
+    "end": 3.503,
+    "score": 0.799
+  },
+  {
+    "word": "to",
+    "start": 3.846,
+    "end": 3.946,
+    "score": 0.99
+  },
+  {
+    "word": "use",
+    "start": 4.087,
+    "end": 4.188,
+    "score": 0.988
+  },
+  {
+    "word": "it",
+    "start": 4.369,
+    "end": 4.409,
+    "score": 0.021
+  },
+  {
+    "word": "in",
+    "start": 4.43,
+    "end": 4.591,
+    "score": 0.696
+  },
+  {
+    "word": "my",
+    "start": 5.215,
+    "end": 5.356,
+    "score": 0.982
+  },
+  {
+    "word": "project.",
+    "start": 5.396,
+    "end": 6.02,
+    "score": 0.739
+  }
+]
