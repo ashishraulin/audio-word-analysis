@@ -100,6 +100,10 @@ Each word contains:
   "energy": 0.104,
   "f0_median": 132.5
 }
+### Generated Report (click to open)
+[![Report screenshot](report_screenshot.png)](report.html)
+
+*Click the image to open the full HTML report in the repository.*
 
 🌟 Why This Project Is Useful
 
