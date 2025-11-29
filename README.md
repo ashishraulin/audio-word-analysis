@@ -1,72 +1,125 @@
-# Word-by-Word Speech Analysis System
+🎙️ Audio Word-Level Pronunciation & Speech Analysis
 
-This project takes an input audio file and performs detailed **word-level speech analysis**, including:
+Word-by-word pronunciation, fluency, emphasis, tension & breathiness analysis using Whisper + WhisperX + Python.
 
-- ⏱ **Word timestamps** (start/end)
-- 🔊 **Energy (loudness)**
-- 🎤 **Pitch (F0)**
-- 🗣 **Pronunciation score**
-- 📈 **Fluency score**
-- ⚡ **Tension score (jitter/shimmer)**
-- 🌬 **Breathiness score (HNR)**
-- 🎯 **Word emphasis score**
+This project analyzes an audio file at a per-word level.https://github.com/ashishraulin/audio-word-analysis/blob/main/README.md
+It generates timestamps, duration, word emphasis, vocal tension, breathiness, fluency, pitch (F0), energy, and pronunciation scores using Deep Learning models.
 
-Generated using **Whisper + WhisperX + Librosa + Praat-Parselmouth**.
+🔥 Key Features
 
+✔️ Accurate transcription using OpenAI Whisper
 
-## 🚀 How It Works
+✔️ Word-level alignment using WhisperX
 
-### **1. Generate Word Timestamps**
+✔️ Extracts:
+
+Pronunciation score
+
+Fluency score
+
+Emphasis score
+
+Breathiness & tension
+
+Pitch (F0)
+
+Energy
+
+Pause before each word
+
+✔️ Saves all analysis in analysis_output.json
+
+✔️ Auto-generates a beautiful report.html
+
+✔️ Fully local — no API required
+
+✔️ Works on Windows (CPU-only)
+
+📂 Project Structure
+audio-word-analysis/
+│── analysis_output.json      # Complete analysis output  
+│── analyze_words.py          # Extract speech features  
+│── generate_report.py        # Creates report.html  
+│── get_words.py              # Whisper + WhisperX transcription  
+│── input.wav                 # Your audio sample  
+│── plot_waveform.py          # Optional waveform plot  
+│── report.html               # Final interactive report  
+│── words.json                # Word timestamps  
+│── venv/                     # Virtual environment  
+└── README.md                 # This file  
+
+🚀 Installation
+1️⃣ Clone the repo
+git clone https://github.com/ashishraulin/audio-word-analysis.git
+cd audio-word-analysis
+
+2️⃣ Create a virtual environment
+python -m venv venv
+venv\Scripts\Activate.ps1
+
+3️⃣ Install dependencies
+pip install -r requirements.txt
+
+4️⃣ Add FFmpeg to PATH
+
+Required for Whisper audio decoding.
+
+🧠 How It Works
+● Step 1 — Transcribe & Align Words
 python get_words.py
 
-Produces:
-- `words.json`
 
+Output → words.json
 
-### **2. Analyze Each Word (Pitch, Energy, HNR, Jitter, Shimmer)**
+● Step 2 — Analyze Speech Features
 python analyze_words.py
-Produces:
-- `analysis_output.json`
 
 
+Output → analysis_output.json
 
-### **3. Generate HTML Report**
+● Step 3 — Generate Final Report
 python generate_report.py
 
-Produces:
-- `report.html` (open in browser)
 
+Opens → report.html (beautiful visual summary)
 
-## 📂 Project Structure
+📊 Example Output
 
-audio-system/
-│
-├── input.wav
-├── get_words.py
-├── analyze_words.py
-├── generate_report.py
-├── words.json
-├── analysis_output.json
-├── report.html
-└── README.md
+Each word contains:
 
+{
+  "word": "Hello",
+  "start": 0.0,
+  "end": 0.40,
+  "duration": 0.40,
+  "pronunciation_score": 0.85,
+  "fluency_score": 1.0,
+  "emphasis_score": -0.12,
+  "tension_score": 0.02,
+  "breathiness_score": 0.91,
+  "energy": 0.104,
+  "f0_median": 132.5
+}
 
-## 📘 Output Files
+🌟 Why This Project Is Useful
 
-### **words.json**
-Contains all word timestamps from WhisperX alignment.
+This tool can be used for:
 
-### **analysis_output.json**
-Contains detailed acoustic features + scores per word.
+🧑‍🏫 English learning apps
 
-### **report.html**
-A clean, readable report showing all word metrics.
+🗣️ Speech therapy
 
+🎙️ Voice-training analysis
 
-## 🙌 Credits
-- OpenAI Whisper  
-- WhisperX Alignment  
-- Librosa  
-- Parselmouth (Praat)  
-- Ashish Raj (Developer)
+📚 Language research
 
+🤖 AI-based speaking evaluation systems
+
+🤝 Contributing
+
+Pull requests are welcome!
+For major changes, open an issue first.
+
+📜 License
+
+MIT License — free to use & modify.
